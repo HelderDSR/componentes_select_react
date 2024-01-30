@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Select({options, value, setValue, ...props}) {
+const Select =({options, value, setValue, ...props}) => {
   return (
     <select value={value} onChange={({target}) => setValue(target.value)}
     {...props}>
